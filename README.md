@@ -25,6 +25,16 @@ npm run build
 npm run serve
 ```
 
+## Deploy (Netlify)
+
+This app is a static export. In Netlify site settings:
+
+- **Build command:** `npm run build`
+- **Publish directory:** `out`
+- Env var (or use `netlify.toml`): `NETLIFY_NEXT_PLUGIN_SKIP=true`
+
+Then trigger a redeploy. Visiting the site root should load the tracking home page.
+
 ## Demo tips
 
 1. From the home page, click a sample tracking number.

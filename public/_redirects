@@ -1,0 +1,3 @@
+# Pretty URLs with trailingSlash: true — send bare paths to folders
+/dashboard    /dashboard/    301
+/track        /             302

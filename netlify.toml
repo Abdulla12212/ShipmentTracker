@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  # This app uses Next.js static export (output: "export").
+  # Skip Netlify's Next.js runtime so it serves the `out/` folder.
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
